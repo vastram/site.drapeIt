@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Billing Policy &ndash; Drape.Studio</title>
+    <link rel="icon" type="image/png" href="./assets/logo/logo.png" />
+    <link rel="apple-touch-icon" href="./assets/logo/logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      :root {
+        --bg: #070b12;
+        --panel: rgba(255, 255, 255, 0.06);
+        --border: rgba(255, 255, 255, 0.12);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.68);
+        --accent: #f59e0b;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        line-height: 1.6;
+        background: radial-gradient(900px 600px at 15% 10%, rgba(245, 158, 11, 0.18), transparent 60%),
+          radial-gradient(900px 600px at 85% 0%, rgba(99, 102, 241, 0.16), transparent 55%),
+          var(--bg);
+        color: var(--text);
+      }
+      a { color: rgba(245, 158, 11, 0.92); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .wrap {
+        max-width: 920px;
+        margin: 44px auto;
+        padding: 0 16px;
+      }
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        margin-bottom: 16px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: var(--accent);
+        box-shadow: 0 0 22px rgba(245, 158, 11, 0.35);
+      }
+      .card {
+        border: 1px solid var(--border);
+        background: var(--panel);
+        border-radius: 16px;
+        padding: 22px;
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(10px);
+      }
+      h1 {
+        margin: 0 0 10px 0;
+        font-size: 28px;
+        line-height: 1.25;
+        letter-spacing: -0.3px;
+      }
+      h2 {
+        margin: 18px 0 8px 0;
+        font-size: 18px;
+        line-height: 1.35;
+      }
+      .gradient {
+        background: linear-gradient(90deg, #fff, rgba(245, 158, 11, 0.95));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      p { margin: 10px 0; color: var(--muted); }
+      p strong, b { color: var(--text); }
+      hr {
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        margin: 18px 0;
+      }
+      ul {
+        margin: 10px 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+      .meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 12px;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 7px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.04);
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ds-topbar">
+      <div class="ds-wrap">
+        <div class="ds-topbar-inner">
+          <a href="/" class="ds-brand">
+            <div class="ds-brand-badge"><img src="./assets/logo/logo.png" alt="Logo" style="width:24px; height:24px;" /></div>
+            <div>Drape.Studio</div>
+          </a>
+          <div class="ds-nav-actions">
+            <button class="ds-nav-btn" type="button" onclick="goBack()">Back</button>
+            <a class="ds-nav-btn" href="/">Home</a>
+            <span class="ds-nav-chip">Billing Policy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+
+      <div class="card">
+        <h1><span class="gradient">Billing Policy</span> &ndash; Drape.Studio</h1>
+        <p><b>Billing &amp; Refund Policy &ndash; Drape.Studio</b></p>
+        <p>Last updated: 2026-01-15</p>
+
+        <h2>1. Pricing Overview</h2>
+        <p>Drape.Studio offers both free and paid plans. Pricing, plan features, and usage limits are displayed on the website or within the application and may vary by plan.</p>
+        <p>All prices are shown in Indian Rupees (INR) unless otherwise stated.</p>
+
+        <h2>2. Free Trial (if applicable)</h2>
+        <p>New users may be offered a free trial for selected plans. Trial details, including duration and feature access, are shown at the time of signup.</p>
+        <p>At the end of the trial period, continued access to paid features requires the purchase of a paid plan.</p>
+
+        <h2>3. Paid Plans and Billing</h2>
+        <p>Paid plans are purchased as one-time payments and provide access to a defined amount of usage credits or features, as described at the time of purchase.</p>
+        <p>Drape.Studio does not enable automatic subscription renewals. Users must manually purchase a new plan or credits when their existing usage is exhausted or expires.</p>
+        <p>By selecting a paid plan and completing payment, you authorize Drape.Studio to charge the applicable fees for your chosen plan.</p>
+        <p>Billing occurs at the time of purchase.</p>
+
+        <h2>4. Information Collected at Checkout</h2>
+        <p>When you purchase a paid plan, we may collect certain billing and contact information as required for payment processing, invoicing, and tax compliance.</p>
+        <p>This may include:</p>
+        <ul>
+          <li>Full name</li>
+          <li>Billing address</li>
+          <li>Telephone or mobile number</li>
+          <li>Email address</li>
+        </ul>
+        <p>This information is required by payment gateways operating in India and may be used to:</p>
+        <ul>
+          <li>Process payments</li>
+          <li>Calculate applicable taxes (including GST)</li>
+          <li>Generate invoices and receipts</li>
+          <li>Contact you regarding billing-related matters</li>
+        </ul>
+
+        <h2>5. Taxes</h2>
+        <p>Prices may be subject to applicable taxes as required by law.</p>
+        <p>Customers located in India may be charged Goods and Services Tax (GST).</p>
+        <p>Customers outside India are generally not charged GST, in accordance with applicable export rules.</p>
+        <p>Any applicable tax amount will be displayed at checkout or reflected on the invoice.</p>
+
+        <h2>6. Payment Processing</h2>
+        <p>Payments are processed securely through third-party payment gateways. Drape.Studio does not store credit card details, bank account information, or other payment credentials.</p>
+        <p>Payment gateways may share limited payment-related and contact information with us, such as:</p>
+        <ul>
+          <li>Transaction identifiers</li>
+          <li>Payment status</li>
+          <li>Email address and phone number provided at checkout</li>
+        </ul>
+        <p>This information is used only for billing, invoicing, accounting, and customer support purposes.</p>
+
+        <h2>7. Invoices</h2>
+        <p>Invoices are generated electronically upon successful payment and are made available to users via email or within the application dashboard.</p>
+        <p>It is the user&rsquo;s responsibility to ensure that billing information provided is accurate.</p>
+
+        <h2>8. Failed or Incomplete Payments</h2>
+        <p>If a payment fails or cannot be completed, access to paid features may not be granted until payment is successfully processed.</p>
+        <p>In the event of a duplicate or failed payment caused by a technical error, users may contact support for review.</p>
+
+        <h2>9. Refund Policy</h2>
+        <p>Payments made for digital services, usage credits, or plans are non-refundable, except where required by applicable law.</p>
+        <p>We do not provide refunds or credits for:</p>
+        <ul>
+          <li>Partially used plans or credits</li>
+          <li>Unused or expired credits</li>
+          <li>User inactivity</li>
+          <li>Change of mind after purchase</li>
+        </ul>
+        <p>Refunds may be issued only in cases of:</p>
+        <ul>
+          <li>Duplicate charges</li>
+          <li>Proven technical billing errors</li>
+          <li>Other situations required by law</li>
+        </ul>
+        <p>Any approved refund will be processed after verification and at our discretion.</p>
+
+        <h2>10. No Cancellation or Auto-Renewal</h2>
+        <p>Drape.Studio does not use automatic subscription renewals.</p>
+        <p>Once a plan or credits are purchased:</p>
+        <ul>
+          <li>The purchase remains valid until the credits are used or expire (as described at purchase)</li>
+          <li>There is no recurring billing</li>
+          <li>There is no cancellation requirement</li>
+        </ul>
+        <p>Users may simply choose not to purchase additional plans or credits after their current usage is exhausted.</p>
+
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this Billing &amp; Refund Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+        <h2>12. Contact Information</h2>
+        <p>For billing or refund-related questions, please contact us at:</p>
+        <p>Email: <b>info@drapeit.me</b></p>
+        <p>Business Entity: <b>Drisha Labs LLP</b>, India</p>
+
+        <hr />
+        <div class="meta">
+          <div>Last updated: 2026-01-15</div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

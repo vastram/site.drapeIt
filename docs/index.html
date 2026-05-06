@@ -1,58 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to DrapeIt.me</title>
-<!--    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="config.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    <link rel="icon" type="image/png" href="imgs/logo/logo_new.png"> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drape.Studio - AI Fashion Imaging</title>
+  <meta
+    name="description"
+    content="AI-generated ecommerce and marketing images for fashion businesses, starting with sarees and expanding to more garment categories."
+  />
+  <meta property="og:title" content="Drape.Studio - AI Fashion Imaging" />
+  <meta
+    property="og:description"
+    content="AI-generated ecommerce and marketing images for fashion businesses, starting with sarees and expanding to more garment categories."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/icon/icon.png" />
+  <link rel="icon" type="image/png" href="./assets/icon/icon.png" />
+  <link rel="apple-touch-icon" href="./assets/icon/icon.png" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-<body class="bg-gray-100" x-data>
-<div class="flex flex-col items-center pt-9 pb-20 bg-white">
-    <div>
-        <header >
-            <div class="flex gap-5 px-5 justify-between w-full font-medium text-black max-w-[1180px]">
-            <div class="flex gap-5 text-3xl tracking-tight leading-8 items-center">
-<!--              <img
-                loading="lazy"
-                src="imgs/logo/logo_new.png"
-                class="shrink-0 w-[50px]"
-              />
--->
-              <div class="flex-auto my-auto font-serif">DrapeIt.me</div>
-            </div>
-            </div>
-        </header>
+<body id="top">
+  <header class="topbar">
+    <div class="wrap">
+      <div class="topbar-inner">
+        <a class="brand" href="./index.html">
+          <span class="brand-badge">
+            <img src="./assets/logo/logo.png" alt="Drape.Studio logo" />
+          </span>
+          <span class="brand-copy">
+            <span>Drape.Studio</span>
+            <small>AI Fashion Imaging</small>
+          </span>
+        </a>
 
-        <main class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div class="bg-white rounded-lg p-6">
-                <img src="index.png"/>
-              </div>
-                <div class="bg-white rounded-lg p-6 mt-0">
-
-                    <h2 class="text-3xl font-bold mb-4">Welcome to DrapeIt.me</h2>
-                    <p class="text-lg">Tired of shopping online and wondering how clothes will actually look on you?</p>
-                    <p class="text-lg pt-4">Stop the guesswork! DrapeIt.me  lets you virtually try on clothes and see how they fit <b>before</b> you buy.</p>
-
-
-                    <h3 class="text-2xl font-bold mt-4 mb-4">How it Works:</h3>
-                    <ul class="list-disc ml-6 text-lg">
-                        <li>Setup your profile by uploading your pictures.</li>
-                        <li>Add the clothes you love from our selection and give it <i>DrapeIt</i>.</li>
-                        <li>See yourself wearing them!</li>
-                        <li>If you like your look, ShareIt ! BuyIt !</li>
-                    </ul>
-                    <p class="text-lg mt-4">It's fast, fun, and takes the stress out of online shopping.</p>
-                    <br/>
-                    <button class="justify-center py-5 self-center text-base font-medium leading-6 text-white bg-black rounded-lg shadow-sm w-[200px]" onclick='location.href=""'>Coming Soon</button>
-                </div>
-            </div>
-        </main>
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="#overview">Overview</a>
+          <a class="nav-link" href="#models">Ways to work</a>
+          <a class="nav-link" href="#outputs">Outputs</a>
+          <a class="btn btn-primary" href="#contact">Contact Us</a>
+        </nav>
+      </div>
     </div>
-</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="panel hero-copy">
+            <div>
+              <h1>AI-generated fashion images for modern retail.</h1>
+              <p class="lead">
+                Fashion-tech for brands, retailers, and suppliers that need ecommerce, outdoor, and marketing-ready garment visuals.
+              </p>
+
+              <div class="hero-points">
+                <div class="mini-card">
+                  <strong>What we do</strong>
+                  <span>Commerce-first garment imagery with a premium visual standard.</span>
+                </div>
+                <div class="mini-card">
+                  <strong>Business models</strong>
+                  <span>Managed service plus self-service via WhatsApp.</span>
+                </div>
+                <div class="mini-card">
+                  <strong>Why it works</strong>
+                  <span>Faster image creation without the time and cost of repeated shoots.</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#contact">Contact Us</a>
+                <a class="btn btn-secondary" href="#overview">See the overview</a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="panel hero-visual" aria-label="Homepage visual preview">
+            <div class="visual-grid">
+              <div class="visual-stack">
+                <div class="media-card portrait-hero">
+                  <img src="./assets/hero/h1.jpg" alt="Studio visual" />
+                </div>
+                <div class="media-card portrait-hero">
+                  <img src="./assets/hero/h2.jpg" alt="Studio visual" />
+                </div>
+              </div>
+
+              <div class="visual-side">
+                <div class="media-card portrait-hero">
+                  <img src="./assets/hero/h3.jpg" alt="Studio visual" />
+                </div>
+                <div class="media-card portrait-hero">
+                  <img src="./assets/hero/h4.jpg" alt="Studio visual" />
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Overview</div>
+            <h2>Launch garment visuals faster, without waiting on a shoot.</h2>
+          </div>
+        </div>
+
+        <div class="overview-shell">
+          <div class="card overview-main">
+            <div class="overview-copy">
+              <div class="overview-lead">
+                <h3>Skip repeated shoots and move faster.</h3>
+                <p>Drape.Studio helps fashion businesses create sale-ready visuals without the scheduling delays, coordination overhead, and recurring cost of traditional photoshoots.</p>
+              </div>
+              <div class="overview-notes">
+                <div class="overview-note">
+                  <strong>Go live sooner</strong>
+                  <p>Turn new arrivals into usable visuals faster, so products can be listed, promoted, and shared without waiting for a full shoot cycle.</p>
+                </div>
+                <div class="overview-note">
+                  <strong>Keep up with moving inventory</strong>
+                  <p>As collections change, new arrivals come in, and selling priorities shift, visuals can keep pace without restarting the full shoot process each time.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="overview-panels">
+              <article class="overview-panel">
+                <h3>What we create</h3>
+                <div class="overview-tags">
+                  <span class="overview-tag">Studio ecommerce</span>
+                  <span class="overview-tag">Outdoor visuals</span>
+                  <span class="overview-tag">Marketing creatives</span>
+                </div>
+              </article>
+
+              <article class="overview-panel">
+                <h3>Who it is for</h3>
+                <div class="overview-list">
+                  <span>Retail brands</span>
+                  <span>Manufacturers</span>
+                  <span>Boutiques</span>
+                  <span>Starter Brands</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <aside class="overview-feature">
+            <span class="pill">The Drape.Studio approach</span>
+            <div>
+              <h3 style="margin: 0 0 10px; font-size: 28px; letter-spacing: -0.03em;">From catalogs to marketing, create polished garment visuals.</h3>
+              <p>Produce highly aesthetic outputs across ecommerce, campaigns, and brand communication in a model that fits how your business works.</p>
+            </div>
+            <div class="overview-carousel" aria-label="Drape.Studio output carousel">
+              <div class="media-card overview-carousel-slide is-active">
+                <img src="./assets/overview/o1.jpg" alt="sample image" />
+              </div>
+              <div class="media-card overview-carousel-slide">
+                <img src="./assets/overview/o2.jpg" alt="sample image" />
+              </div>
+              <div class="media-card overview-carousel-slide">
+                <img src="./assets/overview/o3.jpg" alt="sample image" />
+              </div>
+              <div class="media-card overview-carousel-slide">
+                <img src="./assets/overview/o4.jpg" alt="sample image" />
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="models" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Ways to work</div>
+            <h2>Two models, matched to how fashion businesses actually operate.</h2>
+          </div>
+          <p class="section-copy">
+            Managed service for scale. WhatsApp DIY for speed and simplicity.
+          </p>
+        </div>
+
+        <div class="models">
+          <article class="card model-card service">
+            <span class="pill">Service model</span>
+            <div>
+              <h3>Best for businesses that want a reliable partner, not just a tool.</h3>
+              <p>
+                Best for ongoing volume, repeat demand, and structured coordination.
+              </p>
+            </div>
+            <div class="model-list">
+              <div class="model-item">We take responsibility for output quality and consistency.</div>
+              <div class="model-item">Better for repeat batches and operational teams.</div>
+              <div class="model-item">Easy path for businesses that prefer managed delivery.</div>
+            </div>
+            <a class="btn btn-secondary" href="mailto:info@drapeit.me?subject=Drape.Studio%20Service%20Model%20Inquiry">
+              <span class="btn-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <rect x="2.75" y="5.25" width="18.5" height="13.5" rx="3" fill="#f4e3c7"/>
+                  <path d="M4.5 7.25 12 12.5l7.5-5.25" stroke="#d86f22" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="2.75" y="5.25" width="18.5" height="13.5" rx="3" stroke="#d86f22" stroke-width="1.5"/>
+                </svg>
+              </span>
+              <span>Discuss service requirements</span>
+            </a>
+          </article>
+
+          <article class="card model-card whatsapp">
+            <span class="pill">WhatsApp DIY</span>
+            <div>
+              <h3>For smaller businesses that want low-friction access.</h3>
+              <p>
+                Built around WhatsApp for sellers who want simple adoption and faster starts.
+              </p>
+            </div>
+            <div class="model-list">
+              <div class="model-item">No new app habit required.</div>
+              <div class="model-item">Natural fit for WhatsApp-first business workflows.</div>
+              <div class="model-item">Strong for boutiques and cost-conscious sellers.</div>
+            </div>
+            <a class="btn btn-secondary" href="https://www.instagram.com/aidrapestudio/" target="_blank" rel="noreferrer">
+              <span class="btn-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <defs>
+                    <linearGradient id="instagramGradient" x1="3" y1="21" x2="21" y2="3" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#f58529"/>
+                      <stop offset="0.35" stop-color="#feda77"/>
+                      <stop offset="0.6" stop-color="#dd2a7b"/>
+                      <stop offset="0.82" stop-color="#8134af"/>
+                      <stop offset="1" stop-color="#515bd4"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5" fill="url(#instagramGradient)"/>
+                  <circle cx="12" cy="12" r="4.1" stroke="#ffffff" stroke-width="1.7"/>
+                  <circle cx="17.35" cy="6.65" r="1.1" fill="#ffffff"/>
+                </svg>
+              </span>
+              <span>DM for WhatsApp access</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Why WhatsApp matters</div>
+            <h2>The easiest way to use Drape.Studio is the app you already use.</h2>
+          </div>
+        </div>
+
+        <div class="whatsapp-band">
+          <p class="whatsapp-intro">
+            Many fashion businesses already manage product conversations, follow-ups, and day-to-day selling on WhatsApp. Instead of asking you to learn one more tool, Drape.Studio fits into a workflow that already feels familiar.
+          </p>
+
+          <div class="whatsapp-steps">
+            <article class="card whatsapp-step">
+              <div class="media-card whatsapp-shot">
+                <img src="./assets/whatsapp/w1.jpg" alt="WhatsApp step one" />
+              </div>
+              <div class="whatsapp-step-copy">
+                <span class="whatsapp-step-number">Step 1</span>
+                <h3>Say hi and follow the prompts</h3>
+                <p>Start the conversation and move through guided instructions without learning a new interface.</p>
+              </div>
+            </article>
+
+            <article class="card whatsapp-step">
+              <div class="media-card whatsapp-shot">
+                <img src="./assets/whatsapp/w2.jpg" alt="WhatsApp step two" />
+              </div>
+              <div class="whatsapp-step-copy">
+                <span class="whatsapp-step-number">Step 2</span>
+                <h3>Upload garment flats</h3>
+                <p>Send garment images directly in chat, just like businesses already share product information every day.</p>
+              </div>
+            </article>
+
+            <article class="card whatsapp-step">
+              <div class="media-card whatsapp-shot">
+                <img src="./assets/whatsapp/w3.jpg" alt="WhatsApp step three" />
+              </div>
+              <div class="whatsapp-step-copy">
+                <span class="whatsapp-step-number">Step 3</span>
+                <h3>Receive a hi-def image</h3>
+                <p>Get back a polished output with your chosen pose, background, and visual direction.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="whatsapp-actions">
+            <a class="btn btn-secondary" href="https://www.instagram.com/aidrapestudio/" target="_blank" rel="noreferrer">
+              <span class="btn-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <defs>
+                    <linearGradient id="instagramGradientWhatsapp" x1="3" y1="21" x2="21" y2="3" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#f58529"/>
+                      <stop offset="0.35" stop-color="#feda77"/>
+                      <stop offset="0.6" stop-color="#dd2a7b"/>
+                      <stop offset="0.82" stop-color="#8134af"/>
+                      <stop offset="1" stop-color="#515bd4"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5" fill="url(#instagramGradientWhatsapp)"/>
+                  <circle cx="12" cy="12" r="4.1" stroke="#ffffff" stroke-width="1.7"/>
+                  <circle cx="17.35" cy="6.65" r="1.1" fill="#ffffff"/>
+                </svg>
+              </span>
+              <span>DM for WhatsApp access</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="outputs" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Portfolio</div>
+            <h2>A portfolio that moves from product clarity to brand expression.</h2>
+          </div>
+          <p class="section-copy">
+            See how the work can shift from clean product presentation to more expressive brand-led imagery, while staying grounded in real garment categories.
+          </p>
+        </div>
+
+        <div class="portfolio-groups">
+          <section class="portfolio-group">
+            <div class="portfolio-group-head">
+              <div>
+                <h3>Saree</h3>
+                <p>Catalog and PDP-ready saree visuals designed for clear product presentation.</p>
+              </div>
+            </div>
+            <div class="portfolio-grid">
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree/ps_1.jpg" alt="Saree portfolio visual 1" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree/ps_2.jpg" alt="Saree portfolio visual 2" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree/ps_3.jpg" alt="Saree portfolio visual 3" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree/ps_4.jpg" alt="Saree portfolio visual 4" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree/ps_5.jpg" alt="Saree portfolio visual 5" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree/ps_6.jpg" alt="Saree portfolio visual 6" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree/ps_7.jpg" alt="Saree portfolio visual 7" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree/ps_8.jpg" alt="Saree portfolio visual 8" /></figure>
+            </div>
+          </section>
+
+          <section class="portfolio-group">
+            <div class="portfolio-group-head">
+              <div>
+                <h3>Saree Creatives</h3>
+                <p>Marketing-led saree imagery for campaigns, storytelling, and stronger brand expression.</p>
+              </div>
+            </div>
+            <div class="portfolio-grid">
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree_creatives/p_sc_1.jpg" alt="Saree creative visual 1" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree_creatives/p_sc_2.jpg" alt="Saree creative visual 2" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree_creatives/p_sc_3.jpg" alt="Saree creative visual 3" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree_creatives/p_sc_4.jpg" alt="Saree creative visual 4" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree_creatives/p_sc_5.jpg" alt="Saree creative visual 5" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree_creatives/p_sc_6.jpg" alt="Saree creative visual 6" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree_creatives/p_sc_7.jpg" alt="Saree creative visual 7" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/saree_creatives/p_sc_8.jpg" alt="Saree creative visual 8" /></figure>
+            </div>
+          </section>
+
+          <section class="portfolio-group">
+            <div class="portfolio-group-head">
+              <div>
+                <h3>Kurta</h3>
+                <p>Product-first kurta visuals for catalog, listing, and commerce use.</p>
+              </div>
+            </div>
+            <div class="portfolio-grid">
+              <figure class="portfolio-tile"><img src="./assets/portfolio/women_kurta/p_wk_1.jpg" alt="Kurta portfolio placeholder 1" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/women_kurta/p_wk_2.jpg" alt="Kurta portfolio placeholder 2" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/women_kurta/p_wk_3.jpg" alt="Kurta portfolio placeholder 3" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/women_kurta/p_wk_4.jpg" alt="Kurta portfolio placeholder 4" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/women_kurta/p_wk_5.jpg" alt="Kurta portfolio placeholder 5" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/women_kurta/p_wk_6.jpg" alt="Kurta portfolio placeholder 6" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/women_kurta/p_wk_7.jpg" alt="Kurta portfolio placeholder 7" /></figure>
+              <figure class="portfolio-tile"><img src="./assets/portfolio/women_kurta/p_wk_8.jpg" alt="Kurta portfolio placeholder 8" /></figure>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+      <div class="wrap">
+        <div class="cta-panel">
+          <div class="cta-copy">
+            <div class="section-kicker" style="color: rgba(255,255,255,0.55);">Call to action</div>
+            <h2>Like what you see? Let’s connect.</h2>
+            <p>
+              If this could add value to your business, reach out in the way that feels easiest.
+            </p>
+            <div class="cta-actions">
+              <a class="btn btn-secondary" href="mailto:info@drapeit.me?subject=Drape.Studio%20Service%20Model%20Inquiry">
+                <span class="btn-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <rect x="2.75" y="5.25" width="18.5" height="13.5" rx="3" fill="#f4e3c7"/>
+                    <path d="M4.5 7.25 12 12.5l7.5-5.25" stroke="#d86f22" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="2.75" y="5.25" width="18.5" height="13.5" rx="3" stroke="#d86f22" stroke-width="1.5"/>
+                  </svg>
+                </span>
+                <span>Discuss service requirements</span>
+              </a>
+              <a class="btn btn-secondary" href="https://www.instagram.com/aidrapestudio/" target="_blank" rel="noreferrer">
+                <span class="btn-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <defs>
+                      <linearGradient id="instagramGradientContact" x1="3" y1="21" x2="21" y2="3" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#f58529"/>
+                        <stop offset="0.35" stop-color="#feda77"/>
+                        <stop offset="0.6" stop-color="#dd2a7b"/>
+                        <stop offset="0.82" stop-color="#8134af"/>
+                        <stop offset="1" stop-color="#515bd4"/>
+                      </linearGradient>
+                    </defs>
+                    <rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5" fill="url(#instagramGradientContact)"/>
+                    <circle cx="12" cy="12" r="4.1" stroke="#ffffff" stroke-width="1.7"/>
+                    <circle cx="17.35" cy="6.65" r="1.1" fill="#ffffff"/>
+                  </svg>
+                </span>
+                <span>DM for WhatsApp access</span>
+              </a>
+            </div>
+          </div>
+
+          <aside class="contact-card">
+            <h3>Reach us directly</h3>
+            <p style="margin-top: 12px;">Email</p>
+            <p><a href="mailto:info@drapeit.me">info@drapeit.me</a></p>
+            <p style="margin-top: 18px;">Instagram</p>
+            <p><a href="https://www.instagram.com/aidrapestudio/" target="_blank" rel="noreferrer">@aidrapestudio</a></p>
+            <p style="margin-top: 18px;">Let’s talk!</p>
+            <p>We’re just a message away.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-shell">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="./index.html">
+            <span class="brand-badge">
+              <img src="./assets/logo/logo.png" alt="Drape.Studio logo" />
+            </span>
+            <span class="brand-copy">
+              <span>Drape.Studio</span>
+              <small>AI Fashion Imaging</small>
+            </span>
+          </a>
+        </div>
+
+        <div class="footer-made">
+          Made with ❤️ in India
+        </div>
+
+        <div class="footer-links">
+          <a href="#top">Home</a>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
