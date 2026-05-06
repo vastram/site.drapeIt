@@ -599,6 +599,21 @@ h2 {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
 }
 
+.model-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.model-cta-block {
+  display: grid;
+  gap: 8px;
+}
+
+.model-cta-block .model-actions {
+  justify-content: center;
+}
+
 .quote-band {
   border-radius: var(--radius-xl);
   background:
@@ -798,6 +813,35 @@ h2 {
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 24px;
+  align-items: flex-start;
+}
+
+.cta-action-block {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+}
+
+.email-fallback-note {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-soft);
+  text-align: center;
+}
+
+.email-fallback-note a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: rgba(24, 22, 27, 0.18);
+}
+
+.cta-panel .email-fallback-note {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.cta-panel .email-fallback-note a {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration-color: rgba(255, 255, 255, 0.24);
 }
 
 .section-contact .wrap {
